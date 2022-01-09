@@ -1,7 +1,7 @@
 body{margin: 0;}
 .red {border: 1px /*solid red*/;}
 #head{height: 300px;max-width: 100%;margin: 0 ; background-color: black;}
-#body{height: 600px;max-width: 100%;background-color: gray; }
+#body{height: 900px;max-width: 100%;background-color: gray;}
 img.logo {
     display: block;
     margin-left: auto;
@@ -62,3 +62,58 @@ style
       }
 
 
+      .topnav-centered a {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+      }
+
+.flexbox{
+        margin-left:400px;
+        margin-right: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around ;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+    
+      
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      font-size: 50px;
+      text-align: center;
+    }
+    
+    .left {
+      background-color:rgb(255, 153, 102);
+      padding: 10px;
+      flex: 25%;
+    }
+    
+    .center {
+      background-color:rgb(255, 153, 102);
+      padding: 10px;
+      flex: 50%;
+    }
+    .right {
+      background-color:rgb(255, 153, 102);
+      padding: 10px;
+      flex: 25%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
+    

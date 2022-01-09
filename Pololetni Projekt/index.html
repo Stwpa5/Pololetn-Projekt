@@ -14,15 +14,41 @@
             <a href="clenove.html">Členové</a>
             <a href="koncerty.html">Koncerty</a>
     </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+              } else {
+              navbar.classList.remove("sticky");
+              }
+          }      
+    </script>
     <div id="head" class="red">
-        <img src="logo.png" class="logo">
+        <img src="logo1.png" class="logo" >
 
 
     </div>
-    <div id="body" class="red">
-        <a>Chteli by jste nejake stylove obleceni od nas..?</a>
-        <li><a href="https://www.facebook.com/ATMOrapmusic" class="facebook"><img src="Náš Fb" alt="facebook" class="retina"></a></li>
+    <div>
+        <img src="kluci.jpg" style="max-width: 100%; margin-bottom: 0%; background-color: wheat; " >
     </div>
+    <div id="body" >
+        <div class="flex-container">
+            <div class="left">1</div>
+            <div class="center">3</div>
+            <div class="right">2</div>
+            
+ 
+        </div>
+        
+        
+        
+    </div>
+    
+    
 
 </body>
 </html>
