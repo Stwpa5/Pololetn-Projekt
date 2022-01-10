@@ -14,11 +14,46 @@
             <a href="clenove.html">Členové</a>
             <a class="active" href="javascript:void(0)">Koncerty</a>
     </div>
-    <div id="head" class="red">
-        <img src="logo1.png" class="logo">
-
-
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+              } else {
+              navbar.classList.remove("sticky");
+              }
+          }      
+    </script>
+    <div id="head" class="">
+        <div class="flexbox">
+            <img src="logo1.png" class="logo" style="margin-top: 90px;">
+        </div>
     </div>
-
+<div id="koncerty">
+    <div class="flex-container" >
+        <div class="center" style="background-color: white;">
+            <h6>Bohužel těd nemáme nikde žádnou show</h6>
+            <h6>Minulé shows</h6>
+            <button><a href="https://www.bandsintown.com/a/5183831-atmo-music?affil_code=js_www.atmo-music.cz&app_id=js_www.atmo-music.cz&came_from=242&trigger=track&utm_campaign=track&utm_medium=web&utm_source=widget">Minulé shows</a></button>
+            <h6></h6><h6>&darr; Odkaz zde &darr;</h6>
+            <button><a href="https://www.bandsintown.com/a/5183831-atmo-music?affil_code=js_www.atmo-music.cz&app_id=js_www.atmo-music.cz&came_from=242&trigger=play_my_city&utm_campaign=play_my_city&utm_medium=web&utm_source=widget">Objednat show</a></button>
+        </div>
+    </div>
+</div>
 </body>
+<footer>
+    <div id="foot">
+        <div class="flex-container">
+            <div class="center" style="background-color: black;color: white;">
+                <a href="https://www.facebook.com/ATMOrapmusic"><img src="fb.png"></a>
+                <a href="https://www.instagram.com/atmo_music/"><img src="in.png"></a>
+                <a href="https://www.youtube.com/c/ATMOrapmusic"><img src="yt.png"></a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
 </html>

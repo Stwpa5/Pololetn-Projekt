@@ -14,11 +14,48 @@
             <a href="clenove.html">Členové</a>
             <a href="koncerty.html">Koncerty</a>
     </div>
-    <div id="head" class="red">
-        <img src="logo1.png" class="logo">
-
-
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+              } else {
+              navbar.classList.remove("sticky");
+              }
+          }      
+    </script>
+    <div id="head" class="">
+        <div class="flexbox">
+            <img src="logo1.png" class="logo" style="margin-top: 90px;">
+        </div>
     </div>
-
+<div id="song">
+    <div class="flexbox">
+        <div id="center" style="background-color: white;">
+            <a><h1>Naše poslední pecka</h1></a>
+            <a href="https://www.youtube.com/watch?v=yQfLj3OXLrA"><img src="yt.png"></a>
+            <h1>Ostatní písničky si můžete pustit na streamovacích službách</h1>
+            <a href="https://open.spotify.com/artist/4cXLzhtrbeIoBFV3yQnYlE"><img src="spotify.webp" style="background-color: white; height: 80px;width: 160px;"></a>
+            <br>
+            <a href="https://music.apple.com/cz/artist/atmo-music/768699498"><img src="apple.png"></a>
+            
+        </div>
+    </div>
+</div>
+<footer>
+        <div id="foot">
+            <div class="flex-container">
+                <div class="center" style="background-color: black;color: white;">
+                    <a href="https://www.facebook.com/ATMOrapmusic"><img src="fb.png"></a>
+                    <a href="https://www.instagram.com/atmo_music/"><img src="in.png"></a>
+                    <a href="https://www.youtube.com/c/ATMOrapmusic"><img src="yt.png"></a>
+                </div>
+                
+            </div>
+        </div>
+</footer>
 </body>
 </html>

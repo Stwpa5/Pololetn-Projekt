@@ -1,122 +1,183 @@
-body{margin: 0;}
-.red {border: 1px /*solid red*/;}
-#head{min-height: 300px;max-width: 100%; background-color: black;}
-#body{min-height: 400px;max-width: 100%;background-color: black;}
-#foot{height: 400px;max-width: 100%;background-color: black;}
-img.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0%;
-    opacity: 1.0;
-
-
+body {
+	margin: 0;
 }
-style
-      body {
-        margin-bottom: 10px;
-        font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      
-      .header {
-        background-color: #f1f1f1;
-        padding: 30px;
-        text-align: center;
-      }
-      
-      #navbar {
-        overflow: hidden;
-        background-color: #333;
-      }
-      
-      #navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      
-      #navbar a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      #navbar a.active {
-        background-color: black;
-        color: white;
-      }
-      
-      .content {
-        padding: 16px;
-      }
-      
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      
-      .sticky + .content {
-        padding-top: 60px;
-      }
 
+.red {
+	border: 1px /*solid red*/;
+}
 
-      .topnav-centered a {
-        float: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-      }
+.yt {
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
 
-.flexbox{
-        margin-left:400px;
-        margin-right: 400px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around ;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
-      }
-    
-      
-    * {
-      box-sizing: border-box;
-    }
-    
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-      font-size: 50px;
-      text-align: center;
-    }
-    
-    .left {
-      background-color:rgb(255, 153, 102);
-      padding: 10px;
-      flex: 25%;
-    }
-    
-    .center {
-      background-color:rgb(255, 153, 102);
-      padding: 10px;
-      flex: 50%;
-    }
-    .right {
-      background-color:rgb(255, 153, 102);
-      padding: 10px;
-      flex: 25%;
-    }
-    
-    /* Responsive layout - makes a one column-layout instead of two-column layout */
-    @media (max-width: 800px) {
-      .flex-container {
-        flex-direction: column;
-      }
-    }
-    
+#head {
+	min-height: 300px;
+	max-width: 100%;
+	background-color: black;
+}
+
+#body {
+	min-height: 400px;
+	max-width: 100%;
+	background-color: black;
+}
+
+#foot {
+	height: 200px;
+	max-width: 100%;
+	background-color: black;
+}
+
+#song {
+	height: 800px;
+	max-width: 100%;
+	background-color: white;
+}
+
+#koncerty {
+	height: 800px;
+	max-width: 100%;
+	background-color: white;
+}
+
+#clenove {
+	height: auto;
+	max-width: 100%;
+	background-color: white;
+}
+
+img.logo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0%;
+	opacity: 1.0;
+}
+
+style body {
+	margin-bottom: 10px;
+	font-size: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+}
+
+#navbar {
+	overflow: hidden;
+	background-color: #333;
+}
+
+#iconsmenu {
+	overflow: hidden;
+	background-color: #333;
+}
+
+#navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#icons {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: flex;
+	-webkit-justify-content: right;
+	justify-content: right;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.0rem;
+	text-align: right;
+}
+
+#navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+#navbar a.active {
+	background-color: black;
+	color: white;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
+.topnav-centered a {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flexbox {
+	margin-left: 400px;
+	margin-right: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	font-size: 50px;
+	text-align: center;
+}
+
+.left {
+	background-color: black;
+	padding: 10px;
+	flex: 25%;
+}
+
+.center {
+	background-color: black;
+	padding: 10px;
+	flex: 50%;
+}
+
+.right {
+	background-color: black;
+	padding: 10px;
+	flex: 25%;
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+	.flex-container {
+		flex-direction: column;
+	}
+}

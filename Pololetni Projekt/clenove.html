@@ -14,11 +14,53 @@
             <a class="active" href="javascript:void(0)">Členové</a>
             <a href="koncerty.html">Koncerty</a>
     </div>
-    <div id="head" class="red">
-        <img src="logo1.png" class="logo">
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+              } else {
+              navbar.classList.remove("sticky");
+              }
+          }      
+    </script>
+    <div id="head" class="">
+        <div class="flexbox">
+            <img src="logo1.png" class="logo" style="margin-top: 90px;">
+        </div>
+    </div>
+    <div id="clenove">
+        <div class="flex-container">
+            <div class="left" style="background-color: white;">
+                <a><img src="hank.jfif"></a>
 
+            </div>
+            <div class="center" style="background-color: white;">
+                <a>Kryštof Peuker (HANK)</a><br><a>Rap a zpěv</a><br><a>&larr;</a><br>
+                <a>Ondřej Laub (DJ ask)</a><br><a>Dj</a><br><a>&rarr;</a>
+            </div>
+            <div class="right" style="background-color: white;">
+                
+                <a><br><br><br><img src="ask.jpg"></a>
+
+            </div>
+        </div>
 
     </div>
-
+    <footer>
+        <div id="foot">
+            <div class="flex-container">
+                <div class="center" style="background-color: black;color: white;">
+                    <a href="https://www.facebook.com/ATMOrapmusic"><img src="fb.png"></a>
+                    <a href="https://www.instagram.com/atmo_music/"><img src="in.png"></a>
+                    <a href="https://www.youtube.com/c/ATMOrapmusic"><img src="yt.png"></a>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
