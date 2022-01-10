@@ -1,13 +1,16 @@
 body{margin: 0;}
 .red {border: 1px /*solid red*/;}
-#head{height: 300px;max-width: 100%;margin: 0 ; background-color: black;}
-#body{height: 900px;max-width: 100%;background-color: gray;}
+#head{min-height: 300px;max-width: 100%; background-color: black;}
+#body{min-height: 400px;max-width: 100%;background-color: black;}
+#foot{height: 400px;max-width: 100%;background-color: black;}
 img.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0%;
     opacity: 1.0;
+
+
 }
 style
       body {
